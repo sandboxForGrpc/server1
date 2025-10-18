@@ -1,0 +1,26 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans, health, info
+  custom-settings:
+    mode: prod
+    owner: tom
+    timeout: "5000"
+logging:
+  level:
+    # ✅ 自作クラス（filter, interceptorなど）
+    com.example.demo.filter: DEBUG
+    com.example.demo.interceptor: DEBUG
+
+    # ✅ Spring の標準 Filter 系
+    org.springframework.web.filter: DEBUG
+
+    # ✅ DispatcherServlet の動き（どのハンドラが選ばれたか）
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
+
+    # ✅ HandlerMapping / Interceptor の流れ
+    org.springframework.web.servlet.handler: DEBUG
+
+    # ✅ リクエスト全般（Controllerの呼び出しなど）
+    org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: TRACE
