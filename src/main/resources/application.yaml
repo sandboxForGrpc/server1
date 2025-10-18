@@ -24,3 +24,12 @@ logging:
 
     # ✅ リクエスト全般（Controllerの呼び出しなど）
     org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping: TRACE
+app:
+  s3:
+    bucket: demo-bucket
+
+aws:
+  region: ap-northeast-1
+  endpoint: http://localhost:4566
+  accessKeyId: test
+  secretAccessKey: test
