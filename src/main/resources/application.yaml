@@ -33,3 +33,10 @@ aws:
   endpoint: http://localhost:4566
   accessKeyId: test
   secretAccessKey: test
+
+grpc:
+  greeter:
+    host: 127.0.0.1 # Dockerネットワーク名やホストに合わせて: localhost / 127.0.0.1 / 実IP
+    port: 50051
+    plaintext: true # server_2 が TLS なしなら true
+    deadlineMs: 0 # デッドライン（タイムアウト）ms
