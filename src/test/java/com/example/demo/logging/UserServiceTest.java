@@ -33,6 +33,7 @@ public class UserServiceTest {
 
         // Act
         service.authenticateReference("1");
+        service.SLF4J();
 
         // Assert（getMessage の引数検証）
         verify(accessor, times(1))
