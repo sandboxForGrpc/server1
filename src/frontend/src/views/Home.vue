@@ -12,6 +12,7 @@
       <br />
       <RouterLink to="/upload">Upload</RouterLink>
       <br />
+      <RouterLink to="/hey">Hey sample</RouterLink>
     </nav>
   </div>
 </template>
