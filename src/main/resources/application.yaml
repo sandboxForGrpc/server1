@@ -40,3 +40,6 @@ grpc:
     port: 50051
     plaintext: true # server_2 が TLS なしなら true
     deadlineMs: 0 # デッドライン（タイムアウト）ms
+
+sample:
+  name: "demo Application"
